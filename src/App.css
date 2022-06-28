@@ -15,6 +15,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  justify-items: center;
   padding-top: 15px;
   font-family: Lato, sans-serif;
 }
@@ -24,9 +25,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  margin: 40px 0;
 }
 
 .logo {
   height: 170px;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
 }
