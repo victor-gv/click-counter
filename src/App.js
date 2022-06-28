@@ -2,15 +2,18 @@ import './App.css';
 import logoVictor from './images/logo-victor.png';
 import Button from './components/button';
 import Counter from './components/counter';
+import { useState } from 'react';
 
 function App() {
 
+  const [numClicks, setNumClicks] = useState(0);
+
   const manageClick = () => {
-    console.log("click");
+    setNumClicks(numClicks + 1);
   }
 
   const restartCounter = () => {
-    console.log("Restart");
+    setNumClicks(0);
   }
 
   return (
@@ -23,7 +26,7 @@ function App() {
       </div>
 
       <div className="main-container">
-        <Counter numClicks='5' />
+        <Counter numClicks={numClicks} />
         <Button
           text = 'Click'
           isClickButton = {true}
