@@ -1,7 +1,7 @@
 import './App.css';
 import logoVictor from './images/logo-victor.png';
-import Button from './components/button';
-import Counter from './components/counter';
+import Button from './components/Button';
+import Counter from './components/Counter';
 import { useState } from 'react';
 
 function App() {
