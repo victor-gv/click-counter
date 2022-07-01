@@ -8,7 +8,7 @@ function App() {
 
   const [numClicks, setNumClicks] = useState(0);
 
-  const manageClick = () => {
+  const addCount = () => {
     setNumClicks(numClicks + 1);
   }
 
@@ -30,7 +30,7 @@ function App() {
         <Button
           text = 'Click'
           isClickButton = {true}
-          manageClick = {manageClick}
+          manageClick = {addCount}
         />
 
         <Button
