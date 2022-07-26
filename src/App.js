@@ -1,19 +1,19 @@
 import './App.css';
 import logoVictor from './images/logo-victor.png';
-import Button from './components/Button';
-import Counter from './components/Counter';
+import Button from './components/button';
+import Counter from './components/counter';
 import { useState } from 'react';
 
-function App() {
+function App({ value = 0 }) {
 
-  const [numClicks, setNumClicks] = useState(0);
+  const [numClicks, setNumClicks] = useState(value);
 
   const addCount = () => {
     setNumClicks(numClicks + 1);
   }
 
   const restartCounter = () => {
-    setNumClicks(0);
+    setNumClicks( value = 0 );
   }
 
   return (
